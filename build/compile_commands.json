@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code/build",
+  "command": "/bin/g++-9   -I/home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code  -pthread -g   -o CMakeFiles/ludoGame.dir/main.cpp.o -c /home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code/main.cpp",
+  "file": "/home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code/main.cpp"
+},
+{
+  "directory": "/home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code/build",
+  "command": "/bin/g++-9   -I/home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code  -pthread -g   -o CMakeFiles/ludoGame.dir/custom_player.cpp.o -c /home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code/custom_player.cpp",
+  "file": "/home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code/custom_player.cpp"
+},
+{
+  "directory": "/home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code/build",
+  "command": "/bin/g++-9   -I/home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code  -pthread -g   -o CMakeFiles/ludoGame.dir/game.cpp.o -c /home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code/game.cpp",
+  "file": "/home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code/game.cpp"
+},
+{
+  "directory": "/home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code/build",
+  "command": "/bin/g++-9   -I/home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code  -pthread -g   -o CMakeFiles/ludoGame.dir/neural_network.cpp.o -c /home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code/neural_network.cpp",
+  "file": "/home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code/neural_network.cpp"
+},
+{
+  "directory": "/home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code/build",
+  "command": "/bin/g++-9   -I/home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code  -pthread -g   -o CMakeFiles/ludoGame.dir/perceptron.cpp.o -c /home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code/perceptron.cpp",
+  "file": "/home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code/perceptron.cpp"
+},
+{
+  "directory": "/home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code/build",
+  "command": "/bin/g++-9   -I/home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code  -pthread -g   -o CMakeFiles/ludoGame.dir/test_game.cpp.o -c /home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code/test_game.cpp",
+  "file": "/home/claus/Documents/sdu/8sem/AdvancedAI/ludoGame/Ludo-help-for-tools-of-AI/Domain-Code/test_game.cpp"
+}
+]
