@@ -468,7 +468,7 @@ void neural_network::load(std::string filename)
                     std::string soma_count_str;
                     file >> soma_count_str;
                     soma_count = std::stoi(soma_count_str);
-                    read_soma_data(file, soma_count);
+                    read_soma_data(file, soma_count-1);
                 }
                 else if (data_type == "synapse")
                 {
