@@ -42,6 +42,7 @@ for file = files
     i = i + 1;
 end
 %%
+close all;
 files = ["build/evolution_data_var_1.csv", ...
     "build/evolution_data_var_2.csv", ...
     "build/evolution_data_var_3.csv", ...
@@ -60,14 +61,16 @@ for file = files
     avg_lst = [avg_lst, average];
 end
 % get average from all
-figure(i)
+f = figure(i);
 hold on
 plot(avg_lst)
-plot(ones(1,length(avg_lst))*mean(mean(avg_lst)),'linewidth',2)
+p = plot(ones(1,length(avg_lst))*mean(mean(avg_lst)), '--','linewidth',1);
+p.Color = "black";
 hold off
+f.Position = [200, 200, 400, 300];
 axis([0, 500, 0.28, 0.35])
-title("Average winrate with different \sigma")
-legend({'\sigma = 1', '\sigma = 2', '\sigma = 3', '\sigma = 4', '\sigma = 5'},'Location','northwest')
+title("Average winrate with different $\sigma$ vlaues")
+legend({'\sigma = 1', '\sigma = 2', '\sigma = 3', '\sigma = 4', '\sigma = 5', 'mean'},'Location','northwest')
 xlabel("Iteration")
 ylabel("Win-rate")
 % save plot
