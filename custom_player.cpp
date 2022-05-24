@@ -19,9 +19,9 @@ custom_player::custom_player()
     brain.add(18*2, 3,  soma::SIGMOID); //hidden layer
     brain.add(4, soma::SIGMOID); //output layer
 
-    brain.build();
+    brain.build(); // bild the brain
     for (auto w : brain.synapse_weight)
-        *w = start_weight;
+        *w = start_weight; // initial weight
 
     
     
@@ -29,22 +29,13 @@ custom_player::custom_player()
 
 void custom_player::randomize_brain()
 {
-    int i = 0;
     double max_weight = 0;
     for (auto weights : brain.synapse_weight)
     {
-        i++;
         distribution = std::normal_distribution<double>(0, variation);
         double delta_w = distribution(generator); 
-        *weights += delta_w;
-        // if (*weights < 0)
-        //     *weights = 0;
-        // max_weight = (*weights > max_weight) ? (*weights) : (max_weight);
+        *weights += delta_w; //weight update
     }
-    // // normalisation
-    // for (auto weights : brain.synapse_weight)
-    //     *weights = *weights/max_weight;
-
     
 }
 
@@ -57,15 +48,19 @@ int  custom_player::make_decision() //Selects legal move at random
 {
     
     std::vector<int> options;
+    // give input to brain
     input[0] = (double(dice)/6.0);
     for(int i = 0; i <= 16; i++)
         input[i+1] = (double(position[i])+1)/100.0;
     input[17] = 1; //bias term
     brain.setInput(input);
+
+    // compute output
     brain.compute();
 
     std::vector<double> output = brain.getOutput();
 
+    // sort for highest to lowes scoring move
     std::vector<size_t> indicies( output.size(), 0);
     std::iota(indicies.begin(), indicies.end(), 0);
     std::stable_sort(indicies.begin(), indicies.end(), 
@@ -86,7 +81,5 @@ int  custom_player::make_decision() //Selects legal move at random
         }
     }   
     return move_taken;
-    // int maxElementIndex = std::max_element(output.begin(),output.end()) - output.begin();
-    // return maxElementIndex;
 }
 
